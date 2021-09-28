@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.css"
 import eye from "./eye.svg"
 
-function InputField({ name, inputClass, img, labelClass, labelName}) {
+function InputField({ name, inputClass, img, labelClass, labelName,placholder}) {
     return ( 
     <>
     <label htmlFor={labelName} className={labelClass} >{labelName}</label>
@@ -11,6 +11,7 @@ function InputField({ name, inputClass, img, labelClass, labelName}) {
             type="text"
             name={name}
             className = {inputClass} 
+            placeholder={placholder}
         />
         {img ?  <img src={eye} alt="img-eye" className="eye" /> :  null}
     </div>

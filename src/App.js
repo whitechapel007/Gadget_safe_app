@@ -4,7 +4,6 @@ import Login from "./pages/login"
 import ForgotPasword from "./pages/forgot_password";
 import ResetPasword from "./pages/reset_password";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Button from './components/button/index';
 
 function App() {
  
