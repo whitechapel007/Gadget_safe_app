@@ -1,0 +1,8 @@
+div .img-1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    grid-area: hand;
+    object-fit: cover;
+    width: 100%;
+}

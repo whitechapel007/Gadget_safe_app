@@ -18,24 +18,6 @@ section {
     grid-area: hand2;
 }
 
-div .img-1 {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    grid-area: hand;
-    object-fit: cover;
-    width: 100%;
-}
-
-div .img-2 {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    grid-area: hand2;
-    object-fit: cover;
-    width: 100%;
-}
-
 .input-section {
     color: #fff;
     display: flex;
