@@ -1,26 +1,22 @@
 import React from 'react'
-import image1 from "../../components/images/hand.svg"
-import image2 from "../../components/images/hand2.svg"
-import "../../App.css"
+import "../../App.css";
+import {Label} from "../../components/inputField/index"
 import InputField from '../../components/inputField';
+import Firsthand from "../../components/firsthand"
+import Secondhand from "../../components/secondhand"
 
 function index() {
     return (
         <div className="container">
-            <div className="div-1">
-                <img src={image1} alt="" className="img-1" />
-            </div>
-        <section className="input-section">
-            <h1 className="input-heading"> Sign up with <span> GadgetSafe </span> </h1>
-            <p className="input-paragraph"> Get started and access our gadget insurance and loan services at a go</p>
-            <form>
-                <InputField img name="firstName" labelClass="label-class" labelName='First Name' inputClass="input-class"/>
-            </form>
-        </section>
-
-            <div className="div-2">    
-                <img src={image2} alt="" className="img-2"/>
-            </div>
+            <Firsthand className="div-1"/>
+                <section className="input-section">
+                    <h1 className="input-heading"> Sign up with <span> GadgetSafe </span> </h1>
+                    <p className="input-paragraph"> Get started and access our gadget insurance and loan services at a go</p>
+                    <form>
+                        <InputField img name="firstName" labelClass="label-class" labelName='First Name' inputClass="input-class"/>
+                    </form>
+                </section>
+            <Secondhand className="div-2"/>
         </div>
     )
 }
