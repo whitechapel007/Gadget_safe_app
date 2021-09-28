@@ -1,0 +1,38 @@
+.label-class {
+    color: white;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: .5rem;
+}
+
+.input-class {
+    color: #8A9097;
+    background-color: #35353A;
+    height: 60px;
+    width: 400px;
+    border-radius: 4px;
+    border: 2px solid #FF6F89;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 26px;
+}
+
+.input-class:active,
+.input-class:hover,
+.input-class:focus {
+    border: 2px solid #FF6F89;
+    background-color: #35353A;
+    outline: 0;
+}
+
+input-form {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    right: 58%;
+    top: 7%;
+}

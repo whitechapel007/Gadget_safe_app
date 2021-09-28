@@ -1,0 +1,31 @@
+    .btn-primary {
+        background-color: #FF6F89;
+        color: #000;
+        border-radius: 3px;
+        width: 250px;
+        height: 55px;
+        padding: 1rem;
+        border: 0;
+    }
+    
+    .btn-outline {
+        color: #fff;
+        background: #35353A;
+        border-radius: 4px;
+        width: 250px;
+        height: 55px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #FF6F89 #FF9900;
+    }
+    
+    .btn-flex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    
+    .icon {
+        width: 25px;
+    }
