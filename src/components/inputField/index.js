@@ -2,28 +2,20 @@ import React from 'react'
 import "./style.css"
 import eye from "./eye.svg"
 
-function InputField({ name, inputClass, img}) {
-    return ( <div className="input-form">
-
-     { img ?  <img src={eye} alt="" className="eye" />: null}
-        <input type = "text"
-        id = { name }
-        name = { name }
-        className = { inputClass }
-        
+function InputField({ name, inputClass, img, labelClass, labelName}) {
+    return ( 
+    <>
+    <label htmlFor={labelName} className={labelClass} >{labelName}</label>
+    <div className="input-form">
+        <input 
+            type="text"
+            name={name}
+            className = {inputClass} 
         />
-
-
-        </div>
+        {img ?  <img src={eye} alt="img-eye" className="eye" /> :  null}
+    </div>
+    </>
     )
 }
 
 export default InputField
-
-export const Label=({children,name,labelClass})=>{
-    return(
-        <div>
-            <label htmlFor={name} className ={labelClass}>{children}</label>
-        </div>
-    )
-}

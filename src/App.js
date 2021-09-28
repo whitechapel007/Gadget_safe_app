@@ -9,20 +9,16 @@ import Button from './components/button/index';
 function App() {
  
   return(
-    <div>
-       <Button btnClass="btn-outline btn-flex ">
-      <img alt="" />
-            Sign up with Google
-      </Button> 
-      <Router>
-        <Switch>
-          <Route path="/signup" component={Signup} />    
-          <Route path="/login" component={Login} />    
-          <Route path="/forgot_password" component={ForgotPasword} />    
-          <Route path="/reset_password" component={ResetPasword} />    
-        </Switch>
-      </Router>
-    </div> 
+    <>
+    <Router>
+      <Switch>
+        <Route path="/" component={Signup} />    
+        <Route path="/login" component={Login} />    
+        <Route path="/forgot_password" component={ForgotPasword} />    
+        <Route path="/reset_password" component={ResetPasword} />    
+      </Switch>
+    </Router>
+    </> 
   )
 }
 
