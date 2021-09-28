@@ -5,8 +5,8 @@ import "./style.css"
 function index() {
     return (
         <div className="div-1">
-        <img src={image1} alt="" className="img-1" />
-    </div>
+            <img src={image1} alt="" className="img-1" />
+        </div>
     )
 }
 
