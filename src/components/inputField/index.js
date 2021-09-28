@@ -2,9 +2,8 @@ import React from 'react'
 import "./style.css"
 import eye from "./eye.svg"
 
-function InputField({  name, inputClass, img}) {
+function InputField({ name, inputClass, img}) {
     return ( <div className="input-form">
-        {/* <label htmlFor = { name } className={labelClass} > {Children}</label> */}
 
      { img ?  <img src={eye} alt="" className="eye" />: null}
         <input type = "text"
