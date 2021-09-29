@@ -2,38 +2,82 @@
     color: white;
     font-size: 20px;
     line-height: 26px;
-    font-family: 'DM Sans', sans-serif;
-    margin-bottom: .5rem;
+    font-family: Poppins;
+    font-weight: 200;
 }
 
 .input-class {
     color: #8A9097;
     background-color: #35353A;
-    height: 60px;
-    width: 400px;
-    border-radius: 4px;
-    font-family: DM Sans;
-    font-size: 20px;
+    height: 80px;
+    width: 550px;
+    font-size: 24px;
     font-family: 'DM Sans', sans-serif;
     line-height: 26px;
     border: 0;
     outline: 0;
+    padding: 1rem;
 }
 
 .input-class:active,
 .input-class:hover,
 .input-class:focus {
-    border: 2px solid #FF6F89;
+    /* border: 2px solid #FF6F89; */
     background-color: #35353A;
     outline: 0;
 }
 
 .input-form {
     position: relative;
+    width: 600px;
+    height: 80px;
+    background-color: #35353A;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    margin-top:1rem;
 }
 
 .eye {
     position: absolute;
-    right: 4%;
-    top: 30%;
+    right: 5%;
+    top: 40%;
+}
+
+@media(max-width: 768px) {
+    .input-class {
+        color: #8A9097;
+        background-color: #35353A;
+        height: auto;
+        width: 100%;
+        font-size: 13px;
+        font-family: 'DM Sans', sans-serif;
+        line-height: 26px;
+        border: 0;
+        outline: 0;
+        padding: 0.5rem;
+    }
+    .input-form {
+        position: relative;
+        width: 300px;
+        height: auto;
+        background-color: #35353A;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        margin-top:1rem;
+    }
+    .label-class {
+        color: white;
+        font-size: 12px;
+        line-height: 26px;
+        font-family: Poppins;
+        font-weight: 200;
+    }
+
+    .eye {
+        position: absolute;
+        right: 5%;
+        top: 40%;
+        width: 15px;
+        height: auto;
+    }
 }

@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@100;200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@100&display=swap');
+
 .container {
     max-width: 100vh;
     display: grid;
     grid-template-columns: 20vw 60vw 20vw;
     grid-template-rows: 20vh auto;
     grid-template-areas: "hand . ." ". form hand2";
+}
+
+.flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center;
+    justify-content: center;
 }
 
 section {
@@ -24,28 +36,69 @@ section {
     flex-direction: column;
     align-items: center;
     font-family: 'DM Sans', sans-serif;
-    font-size: 30px;
     font-weight: 500;
+    margin-top: 2rem;        
 }
 
 .input-heading {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 78px;
+    letter-spacing: 0.03em;
 }
 
 .input-paragraph {
     font-size: 1rem;
     font-family: Poppins;
     font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 40px;
     letter-spacing: 0.03em;
     text-align: center;
     color: #8A9097;
+    margin-bottom: 3rem;
 }
 
 span {
     color: #FF6F89;
+}
+
+/* reset_password */
+
+@media(max-width: 700px) {
+    .container {
+        max-width: 100vh;
+        display: grid;
+        grid-template-columns: 10vw 80vw 10vw
+    }
+    .div-1 {
+        display: none;
+    }
+
+    .div-2 {
+        display: none;
+    }
+
+    .input-heading {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        padding-bottom: 1rem;
+    }
+
+    .input-section {
+        margin-top: 0;
+    }
+
+    .input-paragraph {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #8A9097;
+        margin-bottom: 3rem;
+    }
 }

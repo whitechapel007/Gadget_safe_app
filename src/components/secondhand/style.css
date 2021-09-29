@@ -1,8 +1,0 @@
-div .img-2 {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    grid-area: hand2;
-    object-fit: cover;
-    width: 100%;
-}
