@@ -8,18 +8,51 @@ import Button from '../../components/button';
 
 
 function index() {
-    return ( <
-        Container >
-        <
-        section >
+    return (
+     <Container>
+<section className="input-section">
+    <h1 className="input-heading">
+        Log in
+    </h1>
+    <form>
+    <InputField  name="email" labelClass="label-class" labelName='Email Address' inputClass="input-class"
+    place="e.g janedoe@gmail.com"/>
+    <InputField  name="password" labelClass="label-class" labelName='password' type="password" inputClass="input-class"
+    place="Minimum of 8 characters." img/>
+
+<article className="center">
 
 
-        <
-        /section>
+<Button btnClass="btn-primary"> Log in</Button>
 
 
-        <
-        /Container>
+
+<p>
+Don’t have an account?  <span> Sign up here </span>
+</p>
+<p>
+Forgot Password?
+</p>
+
+<h1>
+OR
+</h1>
+
+
+<Button btnClass="btn-outline btn-flex" img> Sign in with Google</Button>
+
+
+
+</article>
+
+
+    </form>
+
+    
+</section>
+
+
+     </Container>
     )
 }
 
