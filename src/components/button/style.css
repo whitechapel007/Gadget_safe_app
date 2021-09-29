@@ -6,6 +6,8 @@
         height: 55px;
         padding: 1rem;
         border: 0;
+        margin-top: 1rem;
+        cursor: pointer;
     }
     
     .btn-outline {
@@ -17,10 +19,11 @@
         border-style: solid;
         border-width: 1px;
         border-color: #FF6F89 #FF9900;
+        cursor: pointer;
     }
     
     .btn-flex {
-        display: flex;
+        display: inline-flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: row-reverse;

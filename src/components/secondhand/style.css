@@ -6,3 +6,9 @@ div .img-2 {
     object-fit: cover;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    div .img-2 {
+        opacity: 0;
+    }
+}
