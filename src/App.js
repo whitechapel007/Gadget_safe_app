@@ -6,14 +6,14 @@ import ResetPassword from "./pages/Reset_password";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
- 
   return(
     <>
     <Router>
       <Switch>
         <Route path="/login" component={Login} />    
         <Route path="/forgot_password" component={ForgotPassword} />    
-        <Route path="/reset_password" component={ResetPassword} />    
+        <Route path="/reset_password" component={ResetPassword} />  
+        <Route path="/" component={Signup} />      
       </Switch>
     </Router>
     </> 
