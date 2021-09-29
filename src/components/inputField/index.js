@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.css"
 import eye from "./eye.svg"
 
-function InputField({ name, inputClass, placeHolder, img, labelClass, type, labelName}) {
+function InputField({ name, type, inputClass, placeHolder, img, labelClass, labelName}) {
     return ( 
     <>
     <label htmlFor={labelName} className={labelClass} >{labelName}</label>
@@ -10,11 +10,10 @@ function InputField({ name, inputClass, placeHolder, img, labelClass, type, labe
         <input 
             type={type}
             name={name}
-            className = {inputClass} 
+            className={inputClass} 
             placeholder={placeHolder}
-            className={inputClass}
-            />
-            { img ?  <img src={eye} alt="img-eye" className="eye" /> :  null}
+        />
+        {img &&  <img src={eye} alt="img-eye" className="eye" /> }
     </div>
     </>
     )
