@@ -1,6 +1,6 @@
 .label-class {
     color: white;
-    font-size: 1rem;
+    font-size: 20px;
     line-height: 26px;
     font-family: Poppins;
     font-weight: 200;
@@ -9,11 +9,9 @@
 .input-class {
     color: #8A9097;
     background-color: #35353A;
-    height: 55px;
-    width: 380px;
-    border-radius: 4px;
-    font-family: DM Sans;
-    font-size: 20px;
+    height: 80px;
+    width: 550px;
+    font-size: 24px;
     font-family: 'DM Sans', sans-serif;
     line-height: 26px;
     border: 0;
