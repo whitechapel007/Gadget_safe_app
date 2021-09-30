@@ -1,17 +1,27 @@
 div .img-1 {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    grid-area: hand;
-    object-fit: cover;
-    /* width: 500px; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  grid-area: hand;
+  object-fit: cover;
+  /* width: 500px; */
 }
 
 div .img-2 {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    grid-area: hand2;
-    object-fit: cover;
-    /* width: 100%; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  grid-area: hand2;
+  object-fit: cover;
+  /* width: 100%; */
+}
+
+@media (max-width: 768px) {
+  .div-1 {
+    display: none;
+  }
+
+  .div-2 {
+    display: none;
+  }
 }
